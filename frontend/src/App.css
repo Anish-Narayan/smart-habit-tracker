@@ -52,8 +52,8 @@ header h1 {
 
 .habit-form input:focus {
   outline: none;
-  border-color: #607D8B; /* Professional, desaturated blue-gray for focus */
-  box-shadow: 0 0 0 3px rgba(96, 125, 139, 0.2); /* Softer focus shadow */
+  border-color: #5F9B9C; /* Soft, professional teal-blue for focus */
+  box-shadow: 0 0 0 3px rgba(95, 155, 156, 0.2); /* Softer focus shadow */
 }
 
 /* Global Button Styling */
@@ -78,27 +78,27 @@ button:active {
 
 /* Specific Button Styles */
 .habit-form button {
-  background-color: #607D8B; /* Professional primary blue-gray */
+  background-color: #5F9B9C; /* Soft, professional teal-blue primary */
 }
 
 .habit-form button:hover {
-  background-color: #455A64; /* Darker professional blue-gray on hover */
+  background-color: #4A7C7D; /* Darker teal-blue on hover */
 }
 
 .btn-done {
-  background-color: #6A9B8D; /* Professional success green (teal-green) */
+  background-color: #7DBA9A; /* Inviting, slightly muted success green */
 }
 
 .btn-done:hover {
-  background-color: #5B877A; /* Darker professional green */
+  background-color: #6BBF99; /* Darker success green */
 }
 
 .btn-miss {
-  background-color: #A86C6C; /* Professional danger red (rose-red) */
+  background-color: #BF6B6B; /* Muted, impactful danger red */
 }
 
 .btn-miss:hover {
-  background-color: #925D5D; /* Darker professional red */
+  background-color: #A35E5E; /* Darker danger red */
 }
 
 .btn-logout {
@@ -160,7 +160,7 @@ button:active {
 
 .habit-info p span {
   font-weight: 700;
-  color: #607D8B; /* Highlight streak count with professional primary color */
+  color: #5F9B9C; /* Highlight streak count with primary teal-blue */
 }
 
 .habit-actions {
@@ -193,22 +193,19 @@ button:active {
 }
 
 .chart-container > div { /* Grid for consistency squares */
+  display: grid; /* Ensure this is a grid */
   grid-template-columns: repeat(7, 14px); /* Slightly larger squares */
   gap: 3px;
   padding-top: 5px;
 }
 
 /* Colors for the consistency chart squares */
-/* #ebedf0 (no data) -> #E5E7EB */
-/* (done) */
-.chart-container > div .chart-square.done { /* Assuming a class for done squares */
-  background-color: #6A9B8D; /* Professional success green (teal-green) */
+.chart-container > div .chart-square.done {
+  background-color: #7DBA9A; /* Inviting success green */
 }
-/* (missed) */
-.chart-container > div .chart-square.missed { /* Assuming a class for missed squares */
-  background-color: #A86C6C; /* Professional danger red (rose-red) */
+.chart-container > div .chart-square.missed {
+  background-color: #BF6B6B; /* Muted danger red */
 }
-/* Add a default for no data if not already present in the component */
 .chart-container > div .chart-square {
   background-color: #E5E7EB; /* Light gray for no data */
 }
@@ -251,18 +248,18 @@ button:active {
 
 .auth-card input:focus {
   outline: none;
-  border-color: #607D8B; /* Professional primary blue-gray */
-  box-shadow: 0 0 0 3px rgba(96, 125, 139, 0.2); /* Softer focus shadow */
+  border-color: #5F9B9C; /* Primary teal-blue */
+  box-shadow: 0 0 0 3px rgba(95, 155, 156, 0.2); /* Softer focus shadow */
 }
 
 .auth-card button {
   width: 100%;
-  background-color: #607D8B; /* Professional primary blue-gray */
+  background-color: #5F9B9C; /* Primary teal-blue */
   margin-top: 10px;
 }
 
 .auth-card button:hover {
-  background-color: #455A64; /* Darker professional blue-gray on hover */
+  background-color: #4A7C7D; /* Darker primary teal-blue on hover */
 }
 
 .auth-card p {
@@ -275,7 +272,7 @@ button:active {
 }
 
 .auth-card p:hover {
-  color: #607D8B; /* Professional primary blue-gray on hover */
+  color: #5F9B9C; /* Primary teal-blue on hover */
   text-decoration: underline; /* Underline on hover */
 }
 
@@ -286,13 +283,13 @@ button:active {
 }
 
 .btn-sim-rem {
-  background-color: #B59E6B; /* Professional muted gold/ochre for warning/simulation */
+  background-color: #DDAA70; /* Warm, earthy gold for warning/simulation */
   width: auto; /* Auto width based on content */
   display: inline-block; /* Allow padding to take effect */
 }
 
 .btn-sim-rem:hover {
-  background-color: #A08B5D; /* Darker muted gold/ochre */
+  background-color: #C79F6F; /* Darker earthy gold */
 }
 
 /* Debug Footer Styling */
@@ -318,9 +315,9 @@ button:active {
 }
 
 .btn-almost {
-  background-color: #7C7891; /* Professional muted indigo for almost missed */
+  background-color: #8D7BA3; /* Muted plum for almost missed */
 }
-.btn-almost:hover { background-color: #6B677F; /* Darker professional indigo */ }
+.btn-almost:hover { background-color: #7B6A8C; /* Darker muted plum */ }
 
 .btn-gap {
   background-color: #4B5563; /* Dark gray for 3-day miss (kept as a neutral utility) */
